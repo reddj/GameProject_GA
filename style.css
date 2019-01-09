@@ -9,6 +9,8 @@ h1 {
 
 .reset {
 	margin: 10px 10px;
+	background-color: rgb(197, 205, 215);
+	color: rgb(244, 66, 155);
 }
 
 .x {
@@ -49,3 +51,5 @@ h1 {
 .game-square:hover {
 	background-color: gold;
 }
+
+
