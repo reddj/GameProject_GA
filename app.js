@@ -96,6 +96,11 @@ for (let i = 1; i <= 9; i++) {
 					' O wins! \n Hit the Play Again button in the top left corner, to play again!'
 				);
 			}
+			if (winner[2] === 1 && winner[4] === 1 && winner[6] === 1) {
+				alert(
+					' O wins! \n Hit the Play Again button in the top left corner, to play again!'
+				);
+			}
 			if (winner.length === 9 && !winner.includes(undefined)) {
 				alert("It's a draw!");
 			}
