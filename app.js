@@ -3,6 +3,8 @@ let winner = [];
 let x = -1;
 let o = 1;
 
+// this is the logic for setup and what happens when a square is clicked
+
 for (let i = 1; i <= 9; i++) {
 	$(`.game-square${i}`).click(function() {
 		if (move) {
@@ -21,6 +23,8 @@ for (let i = 1; i <= 9; i++) {
 			move = true;
 		}
 		// console.log(winner);
+		// this is the logic to check to see if someone has won. It resets every .1 seconds.
+
 		setTimeout(function() {
 			if (winner[0] === -1 && winner[1] === -1 && winner[2] === -1) {
 				alert(
@@ -108,6 +112,8 @@ for (let i = 1; i <= 9; i++) {
 		}, 100);
 	});
 }
+
+// this is the reset button. it reloads the page when clicked.
 
 $('.reset').click(function() {
 	location.reload();
