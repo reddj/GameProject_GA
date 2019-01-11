@@ -2,6 +2,7 @@ let move = true;
 let winner = [];
 let x = -1;
 let o = 1;
+
 for (let i = 1; i <= 9; i++) {
 	$(`.game-square${i}`).click(function() {
 		if (move) {
@@ -19,7 +20,7 @@ for (let i = 1; i <= 9; i++) {
 			$(`.game-square${i}`).off();
 			move = true;
 		}
-		console.log(winner);
+		// console.log(winner);
 		setTimeout(function() {
 			if (winner[0] === -1 && winner[1] === -1 && winner[2] === -1) {
 				alert(
@@ -109,5 +110,5 @@ for (let i = 1; i <= 9; i++) {
 }
 
 $('.reset').click(function() {
-	$('.game-square').empty();
+	location.reload();
 });

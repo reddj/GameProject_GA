@@ -51,15 +51,3 @@ h1 {
 .game-square:hover {
 	background-color: gold;
 }
-
-.winScreen {
-	width: 40%;
-	height: 16%;
-	position: fixed;
-	text-align: center;
-	bottom: 40%;
-	margin: 0 30%;
-	font-size: 45px;
-	color: white;
-	background-color: black;
-}
