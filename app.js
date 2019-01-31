@@ -109,7 +109,7 @@ for (let i = 1; i <= 9; i++) {
 			if (winner.length === 9 && !winner.includes(undefined)) {
 				alert("It's a draw!");
 			}
-		}, 100);
+		}, 0);
 	});
 }
 
